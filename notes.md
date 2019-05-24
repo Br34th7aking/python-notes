@@ -89,3 +89,17 @@ He also talks briefly about the `collections` module and mentions some important
 Wonderful Book, overall!
 
 
+
+
+## Notes from Learn Python 3 the Hard Way - by Zed Shaw 
+
+The first interesting thing I noted was in the exercise 5. Here, Zed talks about format strings. Example: 
+
+```python
+name = "Abhijit"
+print(f"Hello, My name is {name}");
+```
+
+This will print: ```Hello, My name is Abhijit```
+
+
