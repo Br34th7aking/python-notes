@@ -93,7 +93,7 @@ Wonderful Book, overall!
 
 ## Notes from Learn Python 3 the Hard Way - by Zed Shaw 
 
-The first interesting thing I noted was in the exercise 5. Here, Zed talks about format strings. Example: 
+1. The first interesting thing I noted was in the exercise 5. Here, Zed talks about format strings. Example: 
 
 ```python
 name = "Abhijit"
@@ -102,4 +102,28 @@ print(f"Hello, My name is {name}");
 
 This will print: ```Hello, My name is Abhijit```
 
+2. Unpacking from the script input. 
+```python
+from sys import argv
 
+script, user_name = argv # this will take two arguments on the command line wherwe run the script.
+
+prompt = '> ' # We can use this variable with the input() function to ask for their answer. 
+.
+.
+.
+```
+
+3. Multiline print string 
+```python 
+print(f"""
+    Hey, this looks really cool. 
+    And your hat looks cool too.
+    """)
+```
+4. Problem Solving Methodology
+    1. Write or draw about the problem.
+    2. Describe each scene if it's a game. 
+    3. Extract key concepts and research them. Identify classes etc. 
+    4. Code the classes and a test to run them
+    
