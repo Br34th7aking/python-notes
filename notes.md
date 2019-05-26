@@ -127,3 +127,16 @@ print(f"""
     3. Extract key concepts and research them. Identify classes etc. 
     4. Code the classes and a test to run them
     
+5. ```dedent``` is used to strip the whitespaces at the beginning of a mulitline string. It can be imported from ```textwrap``` module.
+
+
+6. Introduction to flask 
+    - We write our code in app.py. The html files are kept in 'templates' folder.
+    - We need to include render_template() function, and pass it the html file and any variables. 
+```python
+    def index():
+        return render_template('index.html', username=username)
+```
+    - All the html files in the templates folder can have two special types of tags. {% %} is used to add keywords like if else etc. {{ }} is used for variable names. 
+
+    
