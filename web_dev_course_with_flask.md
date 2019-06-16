@@ -41,3 +41,57 @@ request = requests.get(url)
 print(request.content)
 ```
 
+
+#### The main app.py file 
+This file contains the code for different views. We can display different pages by using routes. 
+
+Example code:
+```python
+
+from flask import Flask, render_template 
+
+@app.route('/') # decorator
+def index():
+    return render_template('index.html')
+
+```
+
+Where do these html files go? They reside in a special folder named `templates`.
+
+#### The base.html file.
+We can use this file to keep common code and then use templating to get this file's contents into other files. 
+Example: 
+
+`base.html`
+------------
+
+```html 
+<!DOCTYPE html>
+...
+..
+...
+{% block content %}
+
+{% endblock %}
+
+```
+
+`index.html`
+------------
+```flask
+{% extends 'base.html %}
+
+{% block content %}
+    <h1>This is the index file.</h1>
+{% endblock %}
+```
+
+
+#### Where do the css and js files go? 
+These files are again stored in a special folder named 'static'. 
+
+And then we can include a css file as follows: 
+`<link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">`
+
+
+

@@ -139,4 +139,20 @@ print(f"""
 ```
     - All the html files in the templates folder can have two special types of tags. {% %} is used to add keywords like if else etc. {{ }} is used for variable names. 
 
-    
+   
+
+7. Layouts: 
+   when working with html files there is a lot of repititive code that is used. We can store them into layout templates. (Common headers, footers, menus etc.)
+```flask 
+{% extends "layout.html" %}
+
+{% block content %}
+{% if greeting %}
+    I just wanted to say
+    <em style="color: green; font-size: 2em;">{{ greeting }}</em>.
+{% else %}
+    <em>Hello</em>, world!
+{% endif %}
+{% endblock %}
+```
+ 
