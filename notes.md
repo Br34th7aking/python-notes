@@ -155,4 +155,26 @@ print(f"""
 {% endif %}
 {% endblock %}
 ```
- 
+
+
+#### From Python Crash Course
+The projects part in this book is interesting. 
+
+1. For game development, we need some libraries. We can install them on a mac using:
+```brew install hg sdl sdl_image, sdl_ttf```
+
+For sound also add sdl_mixer.
+
+
+2. Learned how to write tests for a function and a class. 
+   There are several methods provided by the `unittest` module. They are: 
+    - assertEqual(a, b)
+    - assertNotEqual(a, b)
+    - assertTrue(a)
+    - assertFalse(a)
+    - assertIn(item, list)
+    - assertNotIn(item, list)
+
+    Make a test class that inherits from the unittest.TestCase. Then define methods that test each feature. Call `unittest.main()` at the last. 
+
+    We can also create a special `setUp()` method that is run before running each method starting with test_. This can be used to create instances of a class and then use them in test methods.  
