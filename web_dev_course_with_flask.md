@@ -93,5 +93,13 @@ These files are again stored in a special folder named 'static'.
 And then we can include a css file as follows: 
 `<link rel="stylesheet" href="{{ url_for('static', filename = 'css/style.css') }}">`
 
+This way of linking can be used for any other resource file. For example: 
+{{ url_for('static', filename='image.jpg') }}
+
+
+#### How to get a custom 404 page?
+@app.errorhandler(404) # app.route ke jagah app.errorhandler
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 
