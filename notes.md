@@ -178,3 +178,8 @@ For sound also add sdl_mixer.
     Make a test class that inherits from the unittest.TestCase. Then define methods that test each feature. Call `unittest.main()` at the last. 
 
     We can also create a special `setUp()` method that is run before running each method starting with test_. This can be used to create instances of a class and then use them in test methods.  
+
+
+Finished this book and loved it. The projects were really good, and there was something to learn in each one of them. I wasn't able to successfully deploy the Django project to Heroku, but apart from that it was a lot of learning. This book will be one of the first ones I recommend for Python.
+
+
