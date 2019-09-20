@@ -103,3 +103,17 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 
+
+**Finished the book Flask by Example. It was a great read.**
+
+#### Notes from Building Web Applications with Flask
+
+* Flask is not an MVC framework, as it does not implement the model layer. You are free to choose to create it anyway you want. 
+
+* Unlike Django,it does not enforce a specific project architecture. 
+* It only provides minimal functionality. For example, if you want database integration, admin interface or migration tools, you can have those via flask extensions. 
+* So when is it a good idea to use Flask? 
+    - Doing something simple
+    - want to implement own project architecture
+    - need granular control over components in the project 
+
