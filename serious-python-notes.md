@@ -88,3 +88,31 @@ A library extends the appliation, a framework forms the chassis of your code.
 
 #### Doug Hellman Interview
 Create some code and run it. Have the basic functionality working and then write tests to make sure you've covered all the edge cases. 
+
+## Chapter 3: Documentation and API Practice
+The most common format for Python documentation is the reStructuredText format or reST. It's a markup language like Markdown.
+
+Tool used for working with this format is Sphinx. 
+
+What to include in the documentation?
+* The problem your project is solving - 1/2 sentences
+* License your project is distributed under. 
+* Small code example
+* Installation instructions.
+* Links to community support, mailing list, IRC etc.
+* Link to bug tracker s ystem.
+* Link to the source code.
+* README.rst
+* CONTRIBUTING.rst for github, used when someone displays a pull requrest.
+
+* readthedocs.org
+
+Sphinx
+pip install sphinx
+sphinx-quickstart
+sphinx-build doc/source doc/build
+
+Now can open doc/build/index.html and read the documentation
+I will get back to this chapter later. 
+
+
